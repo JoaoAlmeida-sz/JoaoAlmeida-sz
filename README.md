@@ -2,7 +2,15 @@
 
 Gosto de transformar dados brutos em bases confiáveis e fáceis de usar. Neste GitHub, reúno projetos de engenharia de dados que vão da ingestão à camada pronta para análise e BI.
 
-## Projeto em destaque
+## Projetos
+
+### [Carga de energia no Brasil | ONS](https://github.com/JoaoAlmeida-sz/pipeline-carga-energia-ons)
+
+Dados públicos de carga diária por subsistema, organizados em um **esquema estrela** no Snowflake: dimensão de data, dimensão de subsistema e fato diária. Uma tabela mensal entrega médias em MWmed para os futuros dashboards.
+
+O código inclui ingestão com validações e controle de revisões da fonte, modelos e testes em dbt e uma DAG diária no Airflow. **Estado atual:** o CSV de 2026 foi validado localmente; a execução completa no Snowflake e no Airflow está em validação.
+
+[Ver arquitetura e código →](https://github.com/JoaoAlmeida-sz/pipeline-carga-energia-ons)
 
 ### [Olist | Pipeline de e-commerce](https://github.com/JoaoAlmeida-sz/olist-ecommerce-pipeline)
 
@@ -14,10 +22,10 @@ Uma pipeline sobre dados públicos do marketplace brasileiro Olist. O projeto ca
 
 [Explorar o projeto e os resultados →](https://github.com/JoaoAlmeida-sz/olist-ecommerce-pipeline)
 
-## Ferramentas presentes no projeto
+## Ferramentas dos projetos
 
-Python · SQL · Snowflake · dbt · Great Expectations · Airflow/Astro · GitHub Actions
+Python · SQL · Snowflake · dbt · Airflow · Great Expectations · GitHub Actions
 
 ---
 
-Cada repositório terá um objetivo claro, decisões de modelagem explicadas e dados preparados para consumo. Conforme novos projetos forem validados, eles aparecerão aqui.
+Cada repositório tem um objetivo claro, decisões de modelagem explicadas e dados preparados para consumo.
