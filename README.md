@@ -8,7 +8,7 @@ Gosto de transformar dados brutos em bases confiáveis e fáceis de usar. Neste 
 
 Dados públicos de carga diária por subsistema, organizados em um **esquema estrela** no Snowflake: dimensão de data, dimensão de subsistema e fato diária. Uma tabela mensal entrega médias em MWmed para os futuros dashboards.
 
-O código inclui ingestão com validações e controle de revisões da fonte, modelos e testes em dbt e uma DAG diária no Airflow. **Estado atual:** o CSV de 2026 foi validado localmente; a execução completa no Snowflake e no Airflow está em validação.
+O código inclui ingestão com validações e controle de revisões da fonte, modelos e testes em dbt e uma DAG diária no Airflow. **Estado atual:** a carga de 2024 a 2026 foi validada e o esquema estrela foi materializado no Snowflake. A execução da DAG ainda depende da configuração local do Airflow.
 
 [Ver arquitetura e código →](https://github.com/JoaoAlmeida-sz/pipeline-carga-energia-ons)
 
